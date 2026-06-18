@@ -1,0 +1,48 @@
+.stat-card {
+  position: relative;
+  border-radius: 14px;
+  padding: 28px 24px;
+  min-height: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Gradient backgrounds per variant */
+.stat-card.s1 { background: linear-gradient(135deg, #b5175e 0%, #7a0f42 100%); }
+.stat-card.s2 { background: linear-gradient(135deg, #6b1050 0%, #3e0830 100%); }
+.stat-card.s3 { background: linear-gradient(135deg, #3d1070 0%, #1e0850 100%); }
+
+/* Card background image overlay */
+.stat-card__bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 80%;
+  background-image: url('/src/assets/background/card-bg.png');
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.stat-card__content {
+  position: relative;
+  z-index: 1;
+}
+
+.stat-card__value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 6px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.stat-card__label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  font-weight: 400;
+}

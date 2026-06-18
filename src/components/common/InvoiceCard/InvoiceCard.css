@@ -1,0 +1,84 @@
+.inv-card-background {
+  padding: 8px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.inv-card {
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* Variants */
+.inv-card.pink {
+  display: flex;
+  padding: 8px;
+  flex-direction: row;
+  background: #fdf0f4;
+  border-color: #f5d8e4;
+}
+
+.inv-card.purple {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  background: #f5f0fd;
+  border-color: #e0d0f8;
+}
+
+/* Left image section */
+.inv-card__thumb {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.inv-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Right content section */
+.inv-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.inv-card__id {
+  font-size: 12px;
+  color: #999;
+  font-weight: 400;
+}
+
+.inv-card__amount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.inv-card__due {
+  font-size: 12px;
+  color: #666;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ede0ea;
+  border-radius: 20px;
+  padding: 4px 12px;
+  width: fit-content;
+}
+
+.inv-card__badge {
+  font-size: 12px;
+  color: #b5175e;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #f0c0d8;
+  border-radius: 20px;
+  padding: 4px 12px;
+  width: fit-content;
+}
+

@@ -1,0 +1,96 @@
+.notifications {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  height: fit-content;
+}
+
+.notifications__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.notifications__header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.notifications__header button {
+  border: none;
+  background: transparent;
+  color: #b5175e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.notifications__tabs {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.notifications__tabs button {
+  background: white;
+  border: 1px solid #cdd3df;
+  border-radius: 10px;
+  padding: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.notifications__tabs .active {
+  border-color: #b5175e;
+  color: #b5175e;
+}
+
+.notifications__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notification-card {
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.notification-card.unread {
+  background: #fdf0f4;
+}
+
+.notification-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  color: #b5175e;
+}
+
+.notification-card.unread .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b5175e;
+}
+
+.notification-card:not(.unread) .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #111827;
+}
+
+.notification-card p {
+  margin: 0 0 16px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.notification-card span {
+  font-size: 14px;
+}

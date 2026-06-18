@@ -1,0 +1,50 @@
+.af-navbar-wrap {
+  border-radius: 14px;
+}
+
+.af-navbar {
+  display: flex;
+  padding: 0;
+  gap: 0;
+}
+
+.af-navbar__tab {
+  font-size: 14px;
+  padding: 14px 24px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: #888;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+}
+
+.af-navbar__tab:first-child {
+  border-radius: 14px 0 0 0;
+}
+
+.af-navbar__tab:last-child {
+  border-radius: 0 14px 0 0;
+}
+
+.af-navbar__tab.active {
+  color: #1a1a2e;
+  font-weight: 600;
+  background: #fff;
+}
+
+.af-navbar__tab:hover:not(.active) {
+  color: #444;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.af-navbar-home {
+  background: #fff;
+  border-radius: 0 0 14px 14px;
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

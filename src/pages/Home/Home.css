@@ -1,0 +1,134 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+/* Fund banner wrapper */
+.fund-banner-background {
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #ede8f0;
+  border-radius: 12px;
+  margin: 8px 0;
+}
+
+/* Fund banner */
+.fund-banner {
+  background: #fff0f5;
+  border: 1px solid #f5d0e0;
+  border-radius: 14px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fund-banner__text h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.fund-banner__btn {
+  background: #b5175e;
+  color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.fund-banner__btn:hover {
+  background: #9a1250;
+}
+
+.fund-banner__img {
+  width: 120px;
+  height: 110px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fund-banner__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Sections */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-section__hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px 0px 10px;
+}
+
+.home-section__hdr h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 10px 0;
+}
+
+.view-all {
+  font-size: 13px;
+  color: #b5175e;
+  font-weight: 700;
+  cursor: pointer;
+}
+.inv-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 8px;
+  align-items: start;
+}
+
+.home-content__left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .home-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .inv-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .inv-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .home-page {
+    padding: 16px;
+  }
+}
